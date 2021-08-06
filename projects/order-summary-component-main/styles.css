@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%, 0.4);
+  --bright-blue: hsl(224, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --background-color: hsl(222, 95%, 92%);
+  --default-font-size: 1.6rem;
+  --border-radius: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--default-font-size);
+  background-color: var(--background-color);
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 85%;
+  background-color: var(--very-pale-blue);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.hero {
+  height: 15rem;
+  background-image: url('./images/illustration-hero.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 3rem 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content p {
+  color: var(--desaturated-blue);
+  text-align: center;
+  margin: 1.3rem;
+  line-height: 1.6;
+}
+
+.payment-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.4rem;
+  background-color: var(--pale-blue);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.payment-plan {
+  display: block;
+  text-align: center;
+  transform: translateX(-1.3rem);
+}
+
+.payment-plan p {
+  margin: 0;
+}
+
+p.plan-type {
+  font-weight: 700;
+  color: black;
+}
+
+.change {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.actions .button {
+  width: 80%;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  font-weight: 700;
+}
+
+.button a:link,
+.button a:active {
+  text-decoration: none;
+}
+
+.payment {
+  background-color: var(--bright-blue);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.payment a {
+  color: var(--very-pale-blue);
+}
+
+.cancel a {
+  color: var(--desaturated-blue);
+}
