@@ -51,17 +51,19 @@ img {
 
 .project-list {
   margin-top: 5rem;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .project {
-  width: 60rem;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid #e67e22;
-  padding-bottom: 3rem;
+  margin: 2rem;
+  padding: 1rem;
 }
 
-.project.last {
-  border: 0;
+.project img {
+  width: 40rem;
+  height: 20rem;
+  overflow: hidden;
 }
 
 .project p {
@@ -92,6 +94,7 @@ img {
 
 .project small {
   display: block;
+  margin-bottom: 1rem;
 }
 
 .keywords {
